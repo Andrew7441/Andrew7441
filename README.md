@@ -48,6 +48,25 @@ I build software across the stack—from concurrent C++ programs and event-drive
   </tr>
 </table>
 
+## Architecture spotlight
+
+The Webhook Task Pipeline keeps ingestion fast by separating incoming requests from background processing and subscriber delivery.
+
+```mermaid
+flowchart LR
+    H["Incoming webhook"] --> A["API service"]
+    A --> Q[("PostgreSQL job queue")]
+    Q --> W["Background worker"]
+    W --> S["Subscriber endpoints"]
+    A --> D["Dashboard & metrics"]
+    W -.-> D
+
+    classDef service fill:#161b22,stroke:#58a6ff,color:#f0f6fc
+    classDef data fill:#251346,stroke:#a371f7,color:#f0f6fc
+    class A,W,D,S,H service
+    class Q data
+```
+
 ## Toolbox
 
 <p>
