@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Andrew — software developer</title>
+  <desc id="desc">A dark gradient developer banner with Andrew's name, focus areas, and a stylized terminal window.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b18" />
+      <stop offset="0.52" stop-color="#121331" />
+      <stop offset="1" stop-color="#251346" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff" />
+      <stop offset="0.5" stop-color="#a371f7" />
+      <stop offset="1" stop-color="#f778ba" />
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="44%" r="56%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.24" />
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+    <clipPath id="round">
+      <rect width="1200" height="360" rx="24" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="360" fill="url(#background)" />
+    <rect width="1200" height="360" fill="url(#glow)" />
+
+    <circle cx="1060" cy="-40" r="220" fill="#6e40c9" opacity="0.10" />
+    <circle cx="1110" cy="335" r="170" fill="#1f6feb" opacity="0.10" />
+    <path d="M0 308 C190 246 310 390 520 302 S870 236 1200 316 V360 H0 Z" fill="#58a6ff" opacity="0.035" />
+
+    <g fill="#c9d1d9" opacity="0.14">
+      <circle cx="68" cy="62" r="2" />
+      <circle cx="180" cy="38" r="1.5" />
+      <circle cx="347" cy="74" r="1.5" />
+      <circle cx="516" cy="37" r="2" />
+      <circle cx="575" cy="110" r="1.5" />
+      <circle cx="1110" cy="80" r="2" />
+      <circle cx="1040" cy="270" r="1.5" />
+      <circle cx="735" cy="315" r="2" />
+      <circle cx="470" cy="328" r="1.5" />
+      <circle cx="120" cy="300" r="2" />
+    </g>
+
+    <g font-family="Inter,Segoe UI,Arial,sans-serif">
+      <text x="74" y="77" fill="#8b949e" font-size="16" font-weight="600" letter-spacing="3">HELLO, WORLD — I'M</text>
+      <text x="70" y="164" fill="#f0f6fc" font-size="76" font-weight="800" letter-spacing="2">ANDREW</text>
+      <rect x="74" y="184" width="432" height="4" rx="2" fill="url(#accent)" />
+      <text x="74" y="226" fill="#c9d1d9" font-size="21" font-weight="500">Building reliable software from systems to web.</text>
+
+      <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" font-weight="600">
+        <rect x="74" y="258" width="142" height="34" rx="17" fill="#58a6ff" opacity="0.13" stroke="#58a6ff" stroke-opacity="0.45" />
+        <text x="145" y="280" text-anchor="middle" fill="#79c0ff">C++ systems</text>
+        <rect x="229" y="258" width="172" height="34" rx="17" fill="#a371f7" opacity="0.13" stroke="#a371f7" stroke-opacity="0.45" />
+        <text x="315" y="280" text-anchor="middle" fill="#d2a8ff">TypeScript services</text>
+        <rect x="414" y="258" width="146" height="34" rx="17" fill="#f778ba" opacity="0.11" stroke="#f778ba" stroke-opacity="0.42" />
+        <text x="487" y="280" text-anchor="middle" fill="#ff7bca">Full-stack</text>
+      </g>
+    </g>
+
+    <g transform="translate(645 62)">
+      <rect x="12" y="15" width="480" height="250" rx="16" fill="#a371f7" opacity="0.14" filter="url(#softGlow)" />
+      <rect width="480" height="250" rx="16" fill="#0d1117" stroke="#30363d" stroke-width="2" />
+      <path d="M0 16 Q0 0 16 0 H464 Q480 0 480 16 V46 H0 Z" fill="#161b22" />
+      <circle cx="24" cy="23" r="6" fill="#ff7b72" />
+      <circle cx="46" cy="23" r="6" fill="#d29922" />
+      <circle cx="68" cy="23" r="6" fill="#3fb950" />
+      <text x="240" y="29" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">~/andrew/build.ts</text>
+
+      <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="16">
+        <text x="27" y="82" fill="#ff7b72">const</text>
+        <text x="82" y="82" fill="#79c0ff">focus</text>
+        <text x="132" y="82" fill="#c9d1d9">= [</text>
+
+        <text x="50" y="116" fill="#a5d6ff">&quot;clean architecture&quot;</text>
+        <text x="236" y="116" fill="#8b949e">,</text>
+        <text x="50" y="148" fill="#a5d6ff">&quot;systems thinking&quot;</text>
+        <text x="226" y="148" fill="#8b949e">,</text>
+        <text x="50" y="180" fill="#a5d6ff">&quot;ship and iterate&quot;</text>
+        <text x="226" y="180" fill="#8b949e">,</text>
+
+        <text x="27" y="212" fill="#c9d1d9">];</text>
+        <rect x="57" y="198" width="9" height="18" fill="#58a6ff">
+          <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" />
+        </rect>
+      </g>
+    </g>
+
+    <rect x="0" y="356" width="1200" height="4" fill="url(#accent)" />
+  </g>
+</svg>
